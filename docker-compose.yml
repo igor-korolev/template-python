@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/app
+    command: python -m templ_app
